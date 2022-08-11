@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "furnacelogic",
+  "version": "${version}",
+  "name": "FurnaceLogic",
+  "description": "When you put gunpowder into a furnace and then fuel it, it'll explode.",
+  "authors": [
+    "medisant"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/furnacelogic/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "medisant.me.furnacelogic.client.FurnacelogicClient"
+    ],
+    "main": [
+      "medisant.me.furnacelogic.Furnacelogic"
+    ]
+  },
+  "mixins": [
+    "furnacelogic.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric": "*",
+    "minecraft": "1.19.2"
+  }
+}
